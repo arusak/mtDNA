@@ -1,0 +1,8 @@
+<script type="module">
+    import {createGenerations} from './src/mt-dna.js';
+    import {render} from './src/renderer.js';
+    import {setupBirthDistribution} from './src/randomizer.js';
+
+    setupBirthDistribution([2, 1, 2, 1]);
+    render(createGenerations(10, 25));
+</script>
